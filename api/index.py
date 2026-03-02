@@ -98,7 +98,7 @@ class TelegramBotWebhook:
         if not "pinned_message" in str(self.bot.get_chat(chat_id)):
             msg_to_pin = self.bot.send_message(
                 chat_id=chat_id,
-                text="/broadcast - broadcast any message\n /fwdcast - broadcast the forwarded message\n /cancel - aborts an ongoing broadcast.",
+                text="/broadcast - broadcast any message \n/fwdcast - broadcast the forwarded message \n/cancel - aborts an ongoing broadcast \n/status - get total number of users in the bot",
             )
             self.bot.pin_chat_message(
                 chat_id=chat_id, message_id=msg_to_pin["result"]["message_id"]
@@ -133,6 +133,15 @@ class TelegramBotWebhook:
                 text="Send me the message you want to forward to all users. I will forward it.",
                 parse_mode="HTML",
             )
+            return True
+        
+        if text.startswith("/status"):
+            try:
+                users = get_served_users()
+                self.bot.send_message(chat_id, f"Total served users: {len(users)}")
+            except Exception as e:
+                logger.error(f"Failed to get served users: {e}")
+                self.bot.send_message(chat_id, "Failed to retrieve user list.")
             return True
 
         return False
