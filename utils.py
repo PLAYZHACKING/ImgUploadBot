@@ -23,7 +23,7 @@ class BOARD:
                 [
                     {
                         "text": "↗️ Source Code",
-                        "url": "https://github.com/XylonBots",
+                        "url": "https://github.com/XylonBots/ImgUploadBot",
                         "style": "primary",
                     }
                 ],
