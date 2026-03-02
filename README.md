@@ -1,2 +1,3 @@
-# ImgUploadBot
-A feature-rich Telegram bot that allows users to upload images and receive shareable links from multiple hosting services. Built with Python, Flask (webhook), and the Telegram Bot API.
+# Tutorial on how to deploy this bot is coming soon...
+
+## Its just easy, Deploy it on vercel, Then set webhook on your bot with https://your-vercel-app-url.vercel.app/api/webhook
