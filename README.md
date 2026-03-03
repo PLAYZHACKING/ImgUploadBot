@@ -2,10 +2,11 @@
 
 A powerful Telegram bot that uploads images to multiple hosting services and provides shareable links instantly.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square)
-![Flask](https://img.shields.io/badge/Flask-3.1+-green?style=flat-square)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?style=flat-square)
-![Vercel](https://img.shields.io/badge/Deployment-Vercel-black?style=flat-square)
+![Python](https://img.shields.io/badge/python-000000?style=for-the-badge&logo=python&logoColor=FFE873)
+![Flask](https://img.shields.io/badge/flask-212121?style=for-the-badge&logo=flask&logoColor=F9F9F9)
+![MongoDB](https://img.shields.io/badge/MongoDB-001E2B?style=for-the-badge&logo=mongodb&logoColor=00ED64)
+![Vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=FFFFFF)
+![Telegram](https://img.shields.io/badge/telegram-000000?style=for-the-badge&logo=telegram&logoColor=FFFFFF)
 
 ## ✨ Features
 
@@ -172,7 +173,7 @@ MONGO_DB_NAME=img_uploadbot
 BOT_TOKEN=1234567890:ABCdefGHIjklmnoPQRstuvWXYZ1234567
 
 # Deployment
-WEBHOOK_URL=https://your-app-name.vercel.app
+WEBHOOK_URL=https://your-app-name.vercel.app/api/webhook
 
 # Admin settings
 ADMIN_IDS=123456789,987654321
@@ -279,7 +280,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - ⭐ **Star** the repository if you find it helpful
 - 🐛 **Report bugs** via GitHub Issues
 - 💬 **Discuss** improvements in GitHub Discussions
-- 📧 **Contact** **https://t.me/Xylon_Hritu** maintainers on Telegram 
+- 📧 **Contact** **[Hritu](https://t.me/Xylon_Hritu)** maintainers on Telegram 
 
 ---
 
