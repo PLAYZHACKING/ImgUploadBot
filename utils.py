@@ -17,13 +17,13 @@ class BOARD:
                 [
                     {
                         "text": "📢 Join Channel",
-                        "url": "https://t.me/XylonBots",
+                        "url": "https://t.me/+1bpf2AXxDoM3NTI1",
                     }
                 ],
                 [
                     {
-                        "text": "↗️ Source Code",
-                        "url": "https://github.com/XylonBots/ImgUploadBot",
+                        "text": "↗️ Join All Channels",
+                        "url": "https://t.me/addlist/_wpSEUUOiM9lNzk1",
                         "style": "primary",
                     }
                 ],
@@ -93,8 +93,7 @@ class BOARD:
                 [
                     {
                         "text": "⭐ Join Channel",
-                        "url": "https://t.me/"
-                        + FORCE_SUB.CHANNEL_USERNAME.replace("@", ""),
+                        "url": "https://t.me/addlist/_wpSEUUOiM9lNzk1"),
                         "style": "success",
                     }
                 ],
@@ -104,30 +103,70 @@ class BOARD:
 
 class TEXT:
     START_MSG = """
-<b>🚀 Welcome to the Image Uploader Bot!</b>
+<b>✨ Welcome to the <a href="https://t.me/playz_image_host_bot">PLAYZ Image Uploader</a></b>
 
-I'm here to help you upload images and get a shareable link in seconds.
+<blockquote>
+⚡ Fast • 🤍 Elegant • 🔐 Secure
+</blockquote>
 
-<b>How it works:</b>
-• Send me any <b>image</b> as a photo or document.
-• I'll upload it using your chosen service.
-• You'll receive a direct URL to share or download.
+Upload your images effortlessly and receive a direct, shareable link within seconds.
 
-<b>⚙️ Change Hosting:</b> Tap the button below to select your preferred hosting to upload your image.
+<b>📌 How it works:</b>
 
-Let's get started — send me an image now!
+<blockquote expandable>
+📤 Send any <b>photo</b> or <b>image as document</b>  
+☁️ Your image is securely processed  
+🔗 Instantly receive a clean download link  
+📱 Smooth performance across all platforms  
+
+Designed for a refined and premium experience.
+</blockquote>
+
+<b>⚙️ Upload Settings:</b>  
+Use the button below to choose your preferred hosting service.
+
+<blockquote>
+👑 Powered by <a href="https://t.me/PLAYZ_HACKING/15">Team Playz</a>
+</blockquote>
+
+Send your image to begin.
 """
     HOSTINGS_MSG = """
-<b>⚙️ Current uploader:</b> <code>{0}</code>
+<b>⚙️ Upload Preferences</b>
 
-<i>Choose your preferred uploader from the buttons below.</i>
+<blockquote>
+📡 Current Uploader:
+<code>{0}</code>
+</blockquote>
+
+<blockquote expandable>
+✨ Stable performance  
+🔗 Instant link generation  
+🔐 Secure upload handling  
+🚀 Reliable speed  
+
+Switch anytime as per your preference.
+</blockquote>
 """
     FORCE_SUB_MSG = """
-<b>🔒 Access Restricted</b>
+<b>🔒 Access Required</b>
 
-To use this bot, you need to join our official channel first.
+<blockquote>
+To continue using this service, you must join our official channels.
+</blockquote>
 
-<b>📢 Channel:</b> {0}
+<blockquote expandable>
+Click below to join our all channels.
 
-<i>Once you've joined, please send your request again.</i>
+👉 <a href="https://t.me/addlist/_wpSEUUOiM9lNzk1">Click Me</a>
+
+After joining:
+• 🔁 Return to the bot  
+• 📤 Send your image again  
+• ✨ Enjoy uninterrupted access
+</blockquote>
+
+<blockquote>
+👑 Powered by <a href="https://t.me/PLAYZ_HACKING/15">Team Playz</a>
+</blockquote>
 """
