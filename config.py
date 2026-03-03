@@ -10,8 +10,6 @@ class MONGO:
 
 
 class BOT:
-    API_ID = os.environ.get("API_ID")
-    API_HASH = os.environ.get("API_HASH")
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
     # DO NOT EDIT ANYTHING IN UPLOADERS_AVAILABLE #
