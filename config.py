@@ -22,10 +22,11 @@ class BOT:
 
 
 class WEB:
-    WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "")
+    WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "https://img-upload-bot-amber.vercel.app/")
 
 
 class FORCE_SUB:
     FORCE_SUB = os.environ.get("FORCE_SUB", True)
     CHANNEL_USERNAME = os.environ.get("FORCE_SUB_CHANNEL", "@PLAYZ_HACKING")
+
 
