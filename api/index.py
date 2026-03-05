@@ -5,11 +5,24 @@ import logging
 import requests
 from flask import Flask, jsonify, request
 from typing import Any, Dict, Optional, Tuple
-from config import ADMIN_IDS, BOT, FORCE_SUB, WEB
-from utils import BOARD, TEXT
-from methods.updates import TelegramBot
-from database.users import add_served_user, get_served_users
-from database.settings import get_user_settings, update_user_setting
+
+# Fix imports - remove the relative imports and use absolute ones
+try:
+    from config import ADMIN_IDS, BOT, FORCE_SUB, WEB
+    from utils import BOARD, TEXT
+    from methods.updates import TelegramBot
+    from database.users import add_served_user, get_served_users
+    from database.settings import get_user_settings, update_user_setting
+except ImportError:
+    # For serverless deployment, try alternative import paths
+    import sys
+    import os
+    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+    from config import ADMIN_IDS, BOT, FORCE_SUB, WEB
+    from utils import BOARD, TEXT
+    from methods.updates import TelegramBot
+    from database.users import add_served_user, get_served_users
+    from database.settings import get_user_settings, update_user_setting
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -523,3 +536,8 @@ def trigger_set_webhook():
 def webhook_info():
     """Vercel entry point to check webhook status."""
     return bot_handler.get_webhook_info()
+
+
+# For local development
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)
